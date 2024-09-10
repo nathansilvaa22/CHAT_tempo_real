@@ -93,7 +93,7 @@ const handleLogin = (e)=>{
     chat.style.display = "flex"
 
     // conectar no servidor
-    websocket = new WebSocket("ws://localhost:8099")  
+    websocket = new WebSocket("wss://chat-tempo-real-m543.onrender.com")  
 
     websocket.onmessage = processMessage
 
